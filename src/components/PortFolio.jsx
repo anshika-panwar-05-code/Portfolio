@@ -20,48 +20,66 @@ function PortFolio() {
       desc: `Spring Boot backend for real-time weather, soil & crop price data.
 React.js frontend with 30% faster load time.
 Flask-based fertility predictions (10% yield boost).
-JWT-secured farmer access.`,
-      code: "https://github.com/Singh-Aviraj",
+JWT-secured farmer access. Architected a custom CVE detection model that scans
+source code and delivers.`,
+      code: "https://github.com/anshika-panwar-05-code",
     },
     {
       id: 2,
-      name: "Med Assist Scribes",
+      name: "DevSecOps AI Assistant",
       desc: `Created an AI-powered assistant to identify and auto-fix
 security vulnerabilities in source code during the development lifecycle.
-• Integrated Trivy and GitHub Actions to automate static
-and container-level security scanning.
-• Architected a custom CVE detection model that scans
-source code and delivers secure patch suggestions using
-prompt-based AI interaction.`,
-      code: "https://github.com/Singh-Aviraj",
+Integrated Trivy and GitHub Actions to automate static
+and container-level security scanning.`,
+      code: "https://github.com/anshika-panwar-05-code",
     },
     {
       id: 3,
-      name: "CyberCrafters",
-      desc: `Tech blog platform on AI, IoT, blockchain, and dev.
-React.js + Spring Boot app with MySQL backend.
-SEO-optimized, 500+ monthly users, 40% traffic growth.
-Deployed on AWS S3 + CloudFront.`,
-      code: "https://github.com/Singh-Aviraj",
+      name: "Teeka-Sarthi",
+      desc: ` Spearheaded the development of a vaccination tracking
+platform under guidance from the Chief Development Officer (CDO), streamlining immunization workflows across
+Anganwadi centers.
+Implemented secure Spring Boot REST APIs for data
+entry, geo-tagged visit proofs, and vaccine schedules.`,
+      code: "https://github.com/anshika-panwar-05-code",
     },
     {
       id: 4,
-      name: "MongoDB App",
+      name: "Interview Experience Platform",
       desc: "A scalable NoSQL-based inventory system with aggregation pipelines.",
-      code: "https://github.com/Singh-Aviraj",
+      code: "https://github.com/anshika-panwar-05-code",
     },
     {
-      id: 5,
-      name: "Express API",
-      desc: "RESTful API with Express.js for authentication and data handling.",
-      code: "https://github.com/Singh-Aviraj",
-    },
-    {
-      id: 6,
-      name: "Python ML App",
-      desc: "Machine learning model deployed with Flask for prediction services.",
-      code: "https://github.com/aviarj/python-ml-app",
-    },
+  id: 4,
+  name: "Interview Experience Platform",
+  desc: "A full-stack platform to share and read interview experiences with authentication and CRUD features using MERN stack.",
+  code: "https://github.com/anshika-panwar-05-code",
+},
+{
+  id: 5,
+  name: "tic-tac-toe",
+  desc: "A React-based tic-tac-toe game with clean UI, local state management, and replay functionality.",
+  code: "https://github.com/anshika-panwar-05-code",
+},
+{
+  id: 6,
+  name: "studentcourse-platform-Backend",
+  desc: "Backend RESTful API for managing student course enrollment using Express.js, Node.js, and MongoDB.",
+  code: "https://github.com/anshika-panwar-05-code",
+},
+{
+  id: 7,
+  name: "react-spreadsheet-table",
+  desc: "A dynamic spreadsheet table built with React allowing cell editing, row operations, and CSV export.",
+  code: "https://github.com/anshika-panwar-05-code",
+},
+{
+  id: 8,
+  name: "Stayfinder",
+  desc: "A React and Node.js based hotel and PG listing platform with filters, search, and user authentication.",
+  code: "https://github.com/anshika-panwar-05-code",
+},
+
   ];
 
   return (

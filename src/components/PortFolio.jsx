@@ -26,9 +26,13 @@ JWT-secured farmer access.`,
     {
       id: 2,
       name: "Med Assist Scribes",
-      desc: `Microservices REST API handling 10,000+ daily transcriptions.
-Optimized MySQL queries reducing response time by 20%.
-JWT authentication for secure user access.`,
+      desc: `Created an AI-powered assistant to identify and auto-fix
+security vulnerabilities in source code during the development lifecycle.
+• Integrated Trivy and GitHub Actions to automate static
+and container-level security scanning.
+• Architected a custom CVE detection model that scans
+source code and delivers secure patch suggestions using
+prompt-based AI interaction.`,
       code: "https://github.com/Singh-Aviraj",
     },
     {

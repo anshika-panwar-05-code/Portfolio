@@ -44,22 +44,16 @@ entry, geo-tagged visit proofs, and vaccine schedules.`,
       code: "https://github.com/anshika-panwar-05-code",
     },
     {
-      id: 4,
-      name: "Interview Experience Platform",
-      desc: "A scalable NoSQL-based inventory system with aggregation pipelines.",
-      code: "https://github.com/anshika-panwar-05-code",
-    },
-    {
   id: 4,
   name: "Interview Experience Platform",
   desc: "A full-stack platform to share and read interview experiences with authentication and CRUD features using MERN stack.",
-  code: "https://github.com/anshika-panwar-05-code",
+  code: "https://interview-experience-frontend-qe6m.onrender.com/",
 },
 {
   id: 5,
   name: "tic-tac-toe",
   desc: "A React-based tic-tac-toe game with clean UI, local state management, and replay functionality.",
-  code: "https://github.com/anshika-panwar-05-code",
+  code: "https://github.com/anshika-panwar-05-code/tic-tac-toe",
 },
 {
   id: 6,
@@ -77,7 +71,7 @@ entry, geo-tagged visit proofs, and vaccine schedules.`,
   id: 8,
   name: "Stayfinder",
   desc: "A React and Node.js based hotel and PG listing platform with filters, search, and user authentication.",
-  code: "https://github.com/anshika-panwar-05-code",
+  code: "https://github.com/anshika-panwar-05-code/Stayfinder",
 },
 
   ];

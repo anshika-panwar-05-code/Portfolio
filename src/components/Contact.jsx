@@ -1,9 +1,9 @@
-import axios from "axios";
 import React from "react";
 import { useForm } from "react-hook-form";
+import axios from "axios";
 import toast from "react-hot-toast";
 
-function Contact() {
+function App() {
   const {
     register,
     handleSubmit,
@@ -12,26 +12,30 @@ function Contact() {
   } = useForm();
 
   const onSubmit = async (data) => {
-    const userInfo = {
+    const payload = {
+      access_key: "0ecfaef1-dee2-4c29-abea-e543b4684f36", // replace with your key
       name: data.name,
       email: data.email,
       message: data.message,
     };
+
     try {
-      await axios.post("https://getform.io/f/raeqjora", userInfo);
+      await axios.post("https://api.web3forms.com/submit", payload, {
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+      });
       toast.success("Your message has been sent!");
-      reset(); // Reset form after submission
+      reset();
     } catch (error) {
-      console.log(error);
+      console.error(error);
       toast.error("Something went wrong. Please try again.");
     }
   };
 
   return (
-    <div
-      name="Contact"
-      className="max-w-screen-2xl container mx-auto px-4 md:px-20 py-20"
-    >
+    <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 py-20">
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-green-700 mb-2">Contact Me</h1>
         <p className="text-gray-600 text-lg">
@@ -49,7 +53,7 @@ function Contact() {
               Full Name
             </label>
             <input
-              {...register("name", { required: true })}
+              {...register("name", { required: "Name is required" })}
               className={`w-full border ${
                 errors.name ? "border-red-500" : "border-gray-300"
               } rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500`}
@@ -57,7 +61,7 @@ function Contact() {
               placeholder="John Doe"
             />
             {errors.name && (
-              <p className="text-sm text-red-500 mt-1">Name is required</p>
+              <p className="text-sm text-red-500 mt-1">{errors.name.message}</p>
             )}
           </div>
 
@@ -91,7 +95,7 @@ function Contact() {
               Your Message
             </label>
             <textarea
-              {...register("message", { required: true })}
+              {...register("message", { required: "Message cannot be empty" })}
               className={`w-full border ${
                 errors.message ? "border-red-500" : "border-gray-300"
               } rounded-lg px-4 py-2 h-28 resize-none focus:outline-none focus:ring-2 focus:ring-green-500`}
@@ -99,7 +103,7 @@ function Contact() {
             />
             {errors.message && (
               <p className="text-sm text-red-500 mt-1">
-                Message cannot be empty
+                {errors.message.message}
               </p>
             )}
           </div>
@@ -116,4 +120,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default App;

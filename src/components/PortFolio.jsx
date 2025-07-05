@@ -47,7 +47,7 @@ entry, geo-tagged visit proofs, and vaccine schedules.`,
   id: 4,
   name: "Interview Experience Platform",
   desc: "A full-stack platform to share and read interview experiences with authentication and CRUD features using MERN stack.",
-  code: "https://interview-experience-frontend-qe6m.onrender.com/",
+  code: "https://inter-exp-fronted.onrender.com/",
 },
 {
   id: 5,
